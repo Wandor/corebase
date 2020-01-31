@@ -1,13 +1,249 @@
 body {
+  background: #f5f5f5;
+  font-family: "Noto Sans", sans-serif !important;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  color: #4c5667;
+  padding-bottom: 61px;
+  font-size: 13px !important;
+  overflow-x: hidden !important;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+
+/*Custom CSS Styles*/
+
+.login {
+  background-color: #ffffff;
+    width: 400px !important;
+    margin-top: 180px !important;
+    margin-left: 500px !important;
+    border-radius: 20px;
+    min-height: 350px;
+    height: auto;
+    overflow-y: hidden;
+    overflow-x: hidden;
+}
+
+.center-block {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.login-white {
+  background-color: #ffffff;
+  height: 100%;
+  margin-right: 20px;
+  margin-left: 20px;
+  overflow-y: hidden;
+  overflow-x: hidden;
+margin-bottom: 20px;
+}
+
+#root, .panel-footer, body {
+  background: #f5f5f5 !important;
+}
+
+.fadeInLeftBig {
+  animation-name: fadeInLeftBig;
+}
+
+.animated {
+  animation-duration: 1s;
+  animation-fill-mode: both;
+}
+
+.topbar-main {
+  display: none;
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-content {
+  margin-top: 112px !important;
+  margin-bottom: 10px !important;
+}
+
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1030;
+}
+
+.navbar {
+  /* box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12); */
+  font-weight: 300;
+}
+
+.topbar-main {
+  background-color: #46305D !important;
+  font-family: 'Noto Sans', sans-serif !important;
+  box-shadow: none !important;
+  height: 60px !important;
+}
+
+.main-tabs {
+  margin-top: 30px !important;
+  margin-bottom: 30px !important;
+  font-family: "Noto sans" Roboto sans-serif !important;
+  font-weight: 500 !important;
+  font-stretch: extra-expanded !important;
+}
+
+.Collapsible {
+  background-color: white;
+  width: 85%;
+  margin-left: 30px;
+  margin-bottom: -3px !important;
+  box-shadow: 0px 0px 0px 0.5px rgba(0, 0, 0, 0.1) !important;
+}
+
+.Collapsible__contentInner {
+  /* padding-top: 5px; */
+  border: none;
+  background-color: #f5f5f5;
+  border-top: 0;
+}
+
+.Collapsible__contentInner p {
+  margin-bottom: 0px !important;
+  padding: 12px 20px;
+  width: 100%;
+  cursor: pointer;
+  font-size: 13px;
+  font-weight: 400;
+  background-color: #ffffff;
+  line-height: 20px;
+  border: 1px solid rgba(152, 166, 173, 0.25) !important;
+}
+
+.Collapsible__contentInner p:hover {
+  background-color: #f5f5f5;
+  border: 1px solid #ebebeb;
+}
+
+.Collapsible__contentInner p:last-child {
+  border-top-left-radius: 0;
+  border-top-right-radius: 0;
+}
+
+.Collapsible__contentInner p a,
+.Collapsible__contentInner a p {
+  color: rgba(0, 0, 0, 0.83) !important;
+}
+
+.Collapsible__trigger {
+  display: block;
+  font-size: 14px !important;
+  font-weight: 600 !important;
+  text-decoration: none;
+  color: #000000;
+  position: relative;
+  border: 1px solid white;
+  padding: 12px 26px;
+  border-bottom: 1px solid #4c6db4;
+  margin-top: 5px !important;
+  cursor: pointer;
+}
+
+.Collapsible__trigger:after {
+  font-family: "FontAwesome";
+  content: "\f107";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  display: block;
+  transition: transform 300ms;
+}
+
+.Collapsible__trigger.is-open:after {
+  transform: rotateZ(180deg);
+}
+
+.Collapsible__trigger.is-disabled {
+  opacity: 0.5;
+  background-color: grey;
+}
+
+.select-action {
+  margin-top: 30px !important;
+  font-family: "Noto sans" sans-serif !important;
+  font-size: 14px !important;
+  /* box-shadow: 0 2px 0.5px 0 rgba(0, 0, 0, 0.16), 0 2px 10px 0 rgba(0, 0, 0, 0.12) !important; */
+}
+
+.panel {
+  -moz-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  border-radius: 0px;
+  border: none;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+.panel .panel-body {
+padding: 20px;
+background-color: #fafafa;
+}
+.panel .panel-body p {
+margin: 0px;
+}
+.panel .panel-body p + p {
+margin-top: 15px;
+background-color: #fafafa;
+}
+.panel-heading {
+border-radius: 0;
+border: none !important;
+padding: 20px 30px;
+border-bottom: 1px solid #4c6db4 !important;
+}
+.panel-default > .panel-heading {
+background-color: #fafafa;
+border-bottom: none;
+color: #0c0c0c;
+}
+.panel-title {
+font-size: 13px;
+font-weight: 600;
+margin-bottom: 0;
+margin-top: 0;
+text-transform: uppercase;
+letter-spacing: 0.03em;
+}
+.panel-control {
+float: right !important;
+}
+.panel-sub-title {
+margin-bottom: 3px;
+color: #CEE4FD;
+margin-top: -3px;
+}
+.panel-footer {
+background: #fafafa;
+border-top: 0px;
+}
+.panel-default .panel-sub-title {
+color: inherit;
+}
+.panel-color .panel-title {
+color: #ffffff;
+}
+.panel-primary > .panel-heading {
+background-color: #4c6db4;
+}
+
+.badge {
+  border-radius: 12px !important;
+  background-color: #00b19d !important;
+  font-weight: 600 !important;
+  padding: 1px 5px !important;
+  font-size: 12px !important;
+  margin-top: 1px !important;
+  margin-bottom: 10px !important;
 }
